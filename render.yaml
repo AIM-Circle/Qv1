@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: pdf-qgen-backend
+    env: python
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: gunicorn backend.app:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.4
+      - key: OPENAI_API_KEY
+        sync: false
