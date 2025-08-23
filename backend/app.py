@@ -14,6 +14,8 @@ app = Flask(__name__)
 # Configure CORS for production and development
 allowed_origins = [
     "http://localhost:3000",  # Local development
+    "http://localhost:5000",  # Local development
+    "http://localhost:3005",  # Local development
     "http://localhost:5173",  # Vite dev server
     "https://pdf-qgen.vercel.app",  # Vercel production
     "https://pdf-qgen-c95cnn2eg-peaces-projects-c6cf6075.vercel.app"  # Vercel preview
