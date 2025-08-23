@@ -418,6 +418,17 @@ const Index = () => {
             />
           ))}
         </div>
+
+        <div className="text-center mt-10">
+          <Button 
+            size="lg"
+            onClick={() => setActiveTab('upload')}
+            className="h-12 px-8 text-base font-semibold"
+          >
+            <FileText className="h-5 w-5 mr-2" />
+            Generate another set of questions
+          </Button>
+        </div>
       </div>
     );
   };
